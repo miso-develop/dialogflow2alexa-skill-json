@@ -1,5 +1,6 @@
 # Dialogflow2AlexaSkillJson
 DialogflowからエクスポートしたzipをもとにAlexa SkillのJSONを生成します。  
+生成されたJSONをAlexa Skillコンソールにドラッグ&ドロップするだけで簡単に移行できます。  
 ※2018/3/10時点の仕様に対応。  
 
 ## できること
@@ -30,7 +31,7 @@ npm i
 * 「EXPORT AS ZIP」ボタンをポチ
 * zipファイルを保存
 
-## Alexa Skill Codeの生成
+## Alexa Skill Jsonの生成
 以下のコマンドを実行。  
 
 ```
@@ -46,7 +47,7 @@ node index.js dialogflow.zip
 * Skill Invocation Nameを手入力して下さい
 
 ## コピペ時の注意事項
-Alexa SkillはDiralogflowに比べて色々制約がきつく、ちょこちょこ調整する必要があります。  
+Alexa SkillはDialogflowに比べて色々制約がきつく、ちょこちょこ調整する必要があります。  
 
 * Intent名とSlot名が同じだと怒られます
 * サンプル発話（AlexaのSample Utterances）に同じSlotを繰り返し使えません
