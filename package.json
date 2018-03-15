@@ -1,0 +1,24 @@
+{
+  "name": "dialogflow2alexa-skill-json",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miso Tanaka <miso.develop@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^3.0.0",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miso-develop/dialogflow2alexa-skill-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miso-develop/dialogflow2alexa-skill-json/issues"
+  },
+  "homepage": "https://github.com/miso-develop/dialogflow2alexa-skill-json#readme",
+  "description": ""
+}
