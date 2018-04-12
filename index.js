@@ -78,6 +78,8 @@ const getTypes = () => {
                 const name = file.match(/(.*)_entries/)[1]
                 let type = {name: name, values: []}
                 for (const entity of entities) {
+                    // id取得
+                    const id = entity.value
                     // synonymの先頭をvalueに
                     entity.value = entity.synonyms.shift()
                     // 重複を除外
@@ -88,7 +90,7 @@ const getTypes = () => {
                             break
                         }
                     }
-                    if (!duplicateFlag) type.values.push({id: entity.value, name: entity})
+                    if (!duplicateFlag) type.values.push({id: id, name: entity})
                 }
                 types.push(type)
                 
@@ -122,6 +124,3 @@ const main = async () => {
     del(unzipPath)
 }
 main()
-
-
-
