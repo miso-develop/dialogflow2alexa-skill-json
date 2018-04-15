@@ -47,7 +47,7 @@ const getIntents = () => {
                         // samples変換
                         const samples = []
                         for (const userSay of userSays) {
-                            let sample = `${name} `
+                            let sample = ""
                             for (const data of userSay.data) {
                                 sample += data.userDefined ? `{${data.text}} ` : `${data.text} `
                             }
